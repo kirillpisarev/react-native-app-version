@@ -7,5 +7,4 @@ timestamp in a separate file for future use inside the app. For example on About
 
 ``` 
 version -number 1.0.1
-
 ```
