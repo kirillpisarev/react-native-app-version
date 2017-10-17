@@ -7,4 +7,5 @@ timestamp in a separate file for future use inside the app. For example on About
 
 ``` js
 version -n 1.0.0
+
 ```
