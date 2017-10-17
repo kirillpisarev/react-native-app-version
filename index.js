@@ -4,16 +4,16 @@ const execSync = require('child_process').execSync
 const fs = require('fs')
 
 const arguments = argv = require('optimist')
-	.usage('Bump react-native app version.\nUsage: react-native-app-version -v 1.0.1')
-	.demand('v')
-	.alias('v', 'version')
+	.usage('Bump react-native app version.\nUsage: version -n 1.0.1')
+	.demand('n')
+	.alias('n', 'number')
 	.alias('p', 'path')
-	.describe('v', 'Version number')
+	.describe('n', 'Version number')
 	.default('p', './app/config/version.json')
-	.check(args => checkVersion(args.version))
+	.check(args => checkVersion(args.number))
 	.argv
 
-const version = arguments.version
+const version = arguments.number
 const versionCode = getVersionCode(version)
 
 if(hasUncommittedChanges())

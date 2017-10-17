@@ -6,6 +6,5 @@ timestamp in a separate file for future use inside the app. For example on About
 ### Usage
 
 ``` js
-react-native-app-version -v 1.0.0
-
+version -n 1.0.0
 ```

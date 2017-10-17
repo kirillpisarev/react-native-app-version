@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Package for bumping react-native app version",
   "main": "index.js",
+  "bin": {
+    "version": "./index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
